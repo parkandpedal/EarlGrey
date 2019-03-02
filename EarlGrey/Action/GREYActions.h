@@ -511,6 +511,9 @@ GREY_EXPORT id<GREYAction> grey_setStepperValue(double value);
 /** Shorthand macro for GREYActions::actionForTap. */
 GREY_EXPORT id<GREYAction> grey_tap(void);
 
+/** Shorthand macro for GREYActions::actionForTapOver. */
+GREY_EXPORT id<GREYAction> grey_tapOver(void);
+
 /** Shorthand macro for GREYActions::actionForTapAtPoint:. */
 GREY_EXPORT id<GREYAction> grey_tapAtPoint(CGPoint point);
 

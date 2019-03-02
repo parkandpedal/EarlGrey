@@ -1,6 +1,7 @@
 *~
 *.sw[o-p]
 .DS_Store
+DerivedData/
 xcuserdata
 *.gem
 fishhook/
