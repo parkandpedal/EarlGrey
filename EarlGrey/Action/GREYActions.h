@@ -302,6 +302,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (id<GREYAction>)actionForTap;
 
 /**
+ *  Returns an action that taps on an element over the activation point of the element.
+ *
+ *  @return A GREYAction to tap over an element.
+ */
++ (id<GREYAction>)actionForTapOver;
+
+
+/**
  *  Returns an action that taps on an element at the specified @c point.
  *
  *  @param point The point that should be tapped. It must be in the coordinate system of the
