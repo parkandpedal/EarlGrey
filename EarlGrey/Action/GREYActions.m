@@ -146,6 +146,10 @@ static Class gAccessibilityTextFieldElementClass;
   return [[GREYTapAction alloc] initWithType:kGREYTapTypeShort];
 }
 
++ (id<GREYAction>)actionForTapOver {
+  return [[GREYTapAction alloc] initWithType:kGREYTapTypeKBKey];
+}
+
 + (id<GREYAction>)actionForTapAtPoint:(CGPoint)point {
   return [[GREYTapAction alloc] initWithType:kGREYTapTypeShort numberOfTaps:1 location:point];
 }
@@ -697,6 +701,10 @@ id<GREYAction> grey_setStepperValue(double value) {
 
 id<GREYAction> grey_tap(void) {
   return [GREYActions actionForTap];
+}
+
+id<GREYAction> grey_tapOver(void) {
+  return [GREYActions actionForTapOver];
 }
 
 id<GREYAction> grey_tapAtPoint(CGPoint point) {
